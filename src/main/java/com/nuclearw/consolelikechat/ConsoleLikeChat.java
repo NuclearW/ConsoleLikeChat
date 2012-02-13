@@ -9,7 +9,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-import org.bukkit.event.Event;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -32,7 +31,7 @@ public class ConsoleLikeChat extends JavaPlugin {
 		}
 
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvent(Event.Type.SERVER_COMMAND, serverListener, Event.Priority.Low, this);
+		pm.registerEvents(serverListener,this);
 
 		log.info("[ConsoleLikeChat] Version "+this.getDescription().getVersion()+" enabled.");
 	}

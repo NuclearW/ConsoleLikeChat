@@ -1,15 +1,18 @@
 package com.nuclearw.consolelikechat;
 
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerCommandEvent;
-import org.bukkit.event.server.ServerListener;
 
-public class ConsoleLikeChatServerListener extends ServerListener {
+public class ConsoleLikeChatServerListener implements Listener {
 	public static ConsoleLikeChat plugin;
 
 	public ConsoleLikeChatServerListener(ConsoleLikeChat instance) {
 		plugin = instance;
 	}
 
+	@EventHandler(priority = EventPriority.LOW)
 	public void onServerCommand(ServerCommandEvent event) {
 		String cmd = event.getCommand();
 		if(cmd.startsWith("/")) {
