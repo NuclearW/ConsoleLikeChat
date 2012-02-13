@@ -1,0 +1,7 @@
+== ConsoleLikeChat
+
+ConsoleLikeChat allows you to talk in console without /say and use commands prefixed with /, as one would in-game chat
+
+=== Compiling
+
+Maven 3 is required to compile ConsoleLikeChat

@@ -1,0 +1,5 @@
+name: ConsoleLikeChat
+main: com.nuclearw.consolelikechat.ConsoleLikeChat
+version: ${project.version}
+author: NuclearW
+description: ConsoleLikeChat allows you to talk in console without /say and use commands prefixed with /, as one would in-game chat
